@@ -99,5 +99,48 @@ header {
             }
 
         }
+
+        .mobile-toggle {
+            display: none;
+            padding: 10px;
+            color: var(--base-800);
+
+            @media (max-width:768px) {
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            margin-top: 10px;
+            width: 100%;
+
+            ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+
+                a {
+                    width: 100%;
+                }
+
+                &.active {
+                    display: flex;
+                }
+            }
+        }
     }
 }
