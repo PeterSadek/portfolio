@@ -23,9 +23,13 @@
       <nav>
         <ul id="menu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a class="button" href="#">Contact Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a class="button" href="mailto:peter_sadek@outlook.com"
+              >Contact Me</a
+            >
+          </li>
         </ul>
         <a class="mobile-toggle" href="#" onclick="toggleMobileMenu()">
           <svg
@@ -58,8 +62,15 @@
               and a drive for creating seamless user experiences.
             </p>
             <div class="call-to-action">
-              <a href="#" class="button black">View Resume</a>
-              <a href="#" class="button white">Contact Me</a>
+              <a
+                href="./Peter_Sadek_Resume.pdf"
+                target="_blank"
+                class="button black"
+                >View Resume</a
+              >
+              <a href="mailto:peter_sadek@outlook.com" class="button white"
+                >Contact Me</a
+              >
             </div>
             <div class="social-links">
               <a href="https://github.com/PeterSadek" target="_blank">
@@ -71,6 +82,20 @@
               >
                 <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
               </a>
+            </div>
+            <div class="contacts">
+              <div class="contact">
+                <a href="mailto:Peter_Sadek@outlook.com">
+                  <img src="./imgs/email.png" alt="Peter's Email" width="40" />
+                  <span>Peter_Sadek@outlook.com</span>
+                </a>
+              </div>
+              <div class="contact">
+                <a href="tel:+20 01202367698">
+                  <img src="./imgs/phone.png" alt="Peter's Phone" width="40" />
+                  <span>(+20) 01202367698</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="skills container">
+      <section id="skills" class="skills container">
         <h2>
           <small>About Me</small>
           Skills
@@ -191,7 +216,7 @@
           </article>
         </div>
       </section>
-      <section class="bento">
+      <section id="projects" class="bento">
         <h2>
           <small>Previous</small>
           Completed Projects

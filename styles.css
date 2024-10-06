@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -81,6 +85,7 @@ header {
             display: flex;
             list-style-type: none;
             gap: 5px;
+            transition: max-height 0.3s ease-in-out;
 
             li {
                 display: inline-block;
@@ -128,10 +133,13 @@ header {
             width: 100%;
 
             ul {
-                display: none;
+                display: flex;
                 flex-direction: column;
                 width: 100%;
                 text-align: center;
+                transition: max-height 0.5s ease-in-out;
+                overflow: hidden;
+                max-height: 0;
 
                 a {
                     width: 100%;
@@ -139,6 +147,7 @@ header {
 
                 &.active {
                     display: flex;
+                    max-height: 500px;
                 }
             }
         }
@@ -241,6 +250,17 @@ h1 {
                 }
             }
         }
+
+        .contacts {
+            .contact {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: black;
+                }
+            }
+        }
     }
 
     .hero-yellow {
@@ -259,6 +279,8 @@ h1 {
     }
 
 }
+
+
 
 .logos {
     background-color: var(--base-100);
@@ -403,6 +425,7 @@ h3 {
 }
 
 .bento {
+    margin-bottom: 30px;
 
     .bento-grid {
         display: grid;
