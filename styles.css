@@ -280,8 +280,6 @@ h1 {
 
 }
 
-
-
 .logos {
     background-color: var(--base-100);
     border-radius: 30px;
@@ -424,69 +422,54 @@ h3 {
     }
 }
 
-.bento {
+.projects {
     margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 
-    .bento-grid {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        height: 640px;
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
 
 
-        @media (max-width: 768px) {
-            display: flex;
+        @media (max-width: 1024px) {
             flex-direction: column;
             gap: 30px;
-            height: auto;
-        }
-
-        .bento-item {
-            background-color: var(--base-100);
-            padding: 30px;
-            border-radius: 15px;
-            position: relative;
-            overflow: hidden;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                object-fit: cover;
-                transition: ease 3s all;
-            }
-
-            &:hover {
-                img {
-                    transform: scale(1.2);
-                }
-            }
-
-            @media (max-width: 768px) {
-                height: 240px;
-            }
-
-            &:nth-child(1) {
-                grid-column: 1 / 4;
-                grid-row: 1 / span 2;
-            }
-
-            &:nth-child(2) {
-                grid-column: 4 /span 2;
-                grid-row: 1 / span 1;
-            }
-
-            &:nth-child(3) {
-                grid-column: 1 / 4;
-                grid-row: 3 / span 1;
-            }
-
-            &:nth-child(4) {
-                grid-column: 4 / span 2;
-                grid-row: 2 / span 2;
-            }
         }
     }
+
+
+    .project {
+        flex: 0 1 calc(50% - 10px);
+        background-color: var(--base-100);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            object-fit: cover;
+            transition: ease 2s all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        div {
+            margin-top: auto;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+    }
+
 }
