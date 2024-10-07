@@ -116,7 +116,7 @@ header {
             @media (max-width:768px) {
                 display: inline-block;
                 position: absolute;
-                top: 32px;
+                top: 20px;
                 right: 5px;
             }
         }
