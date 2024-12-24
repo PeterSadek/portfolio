@@ -52,13 +52,16 @@ header {
 
     .logo-holder {
         display: flex;
-        padding: 10px;
         align-items: center;
         font-weight: 600;
         color: var(--base-800);
 
         @media (max-width:768px) {
             align-self: flex-start;
+        }
+
+        @media (max-width:1024px) {
+            padding: 10px
         }
 
         .logo {
@@ -472,6 +475,17 @@ h3 {
         p {
             margin-bottom: 10px;
         }
+
+        .tech {
+            font-weight: bold;
+            color: var(--blue-800);
+            padding: 0 5px;
+        }
+
+        .tech:hover {
+            text-decoration: underline;
+        }
+
 
     }
 
