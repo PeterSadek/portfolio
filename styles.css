@@ -429,9 +429,10 @@ h3 {
 }
 
 .projects {
+    max-width: 1440px;
+    margin: auto;
     margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
+
 
     .projects-container {
         display: flex;
@@ -450,7 +451,7 @@ h3 {
     .project {
         flex: 0 1 calc(50% - 10px);
         background-color: var(--base-100);
-        border-radius: 15px;
+        border-radius: 30px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -464,11 +465,11 @@ h3 {
             }
         }
 
-        h3 {
-            margin-top: 20px;
+        .project-content {
+            padding: 30px;
         }
 
-        div {
+        .demo-links {
             margin-top: auto;
         }
 
