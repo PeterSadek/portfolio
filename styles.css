@@ -15,6 +15,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 20px;
+    padding: 0 1rem;
 }
 
 a {
@@ -44,10 +45,11 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 1rem;
     margin: auto;
     max-width: 1440px;
+    margin-left: -1rem;
+    margin-right: -1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     .logo-holder {
@@ -290,6 +292,8 @@ h1 {
     background-color: var(--base-100);
     border-radius: 30px;
     padding: 30px 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
 
     @media (max-width:1440px) {
         border-radius: 0;
@@ -308,7 +312,8 @@ h1 {
             will-change: transform;
             animation: marquee 40s linear infinite;
             display: flex;
-            gap: 10px
+            gap: 10px;
+
         }
     }
 }
@@ -488,6 +493,81 @@ h3 {
         }
 
 
+    }
+
+}
+
+footer {
+    background-color: var(--base-100);
+    padding: 10px 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo-holder {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: var(--base-800);
+
+            @media (max-width:768px) {
+                align-self: center;
+            }
+
+            @media (max-width:1024px) {
+                padding: 10px
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--base-800);
+                color: var(--base-100);
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 32px;
+
+            }
+
+            .logo-text {
+                flex: 1;
+            }
+        }
+
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+
+            img {
+                transition: transform 0.2s;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
+    .footer-tagline {
+        color: var(--base-600);
+        text-align: center;
+        margin: 10px 0;
     }
 
 }
