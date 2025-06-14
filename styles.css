@@ -16,7 +16,11 @@ body {
     font-style: normal;
     font-size: 20px;
     padding: 0 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--base-100);
+    color: var(--base);
 }
+
 
 a {
     text-decoration: none;
@@ -28,6 +32,7 @@ a {
 }
 
 :root {
+    /* Light Mode Variables */
     --base: #555;
     --base-100: #f1f1f1;
     --base-400: #555;
@@ -42,13 +47,41 @@ a {
     --blue-800: #0a61ae;
 }
 
+
+body.dark-mode {
+    --base: #a0aec0;
+    /* Light grey for general text */
+    --base-100: #1a202c;
+    /* Very dark blue-grey background */
+    --base-400: #718096;
+    /* Medium grey for secondary text/borders */
+    --base-800: #e2e8f0;
+    /* Off-white for headings/strong elements */
+
+    --yellow: #f6ad55;
+    --yellow-100: #2d3748;
+    /* Dark background for yellow sections */
+    --yellow-400: #ed8936;
+    --yellow-800: #fbd38d;
+    /* Lighter, creamy yellow for contrast */
+
+    --blue: #63b3ed;
+    /* Lighter, brighter blue for links */
+    --blue-100: #2a4365;
+    /* Dark blue background for blue sections */
+    --blue-400: #176fb8;
+    --blue-800: #90cdf4;
+}
+
+
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 1rem;
+    padding: 16px 1rem;
     margin-left: -1rem;
     margin-right: -1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--header-border-color, rgba(0, 0, 0, 0.1));
 
 
     .logo-holder {
@@ -161,6 +194,10 @@ header {
     }
 }
 
+body.dark-mode header {
+    --header-border-color: rgba(255, 255, 255, 0.1);
+}
+
 .container {
     max-width: 1440px;
     gap: 30px;
@@ -198,6 +235,17 @@ header {
         }
     }
 
+    &.contactBtn {
+        background-color: white;
+        color: black;
+
+        &:hover {
+            background-color: var(--base-100);
+            color: var(--base);
+
+        }
+    }
+
     &.black {
         background-color: black;
         color: white;
@@ -213,10 +261,12 @@ h1 {
     font-size: 64px;
     line-height: 1;
     margin-bottom: 10px;
+    color: var(--base-800);
 
     small {
         display: block;
         font-weight: 100;
+        color: var(--base);
     }
 
     @media (max-width: 1024px) {
@@ -251,12 +301,6 @@ h1 {
         }
 
         .social-links {
-
-            /* a {
-                &:hover {
-                    text-decoration: none;
-                }
-            } */
             a {
                 text-decoration: none;
 
@@ -277,7 +321,8 @@ h1 {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    color: black;
+                    color: var(--base-800);
+                    /* Ensure contact text uses a variable */
                 }
 
                 @media(max-width: 375px) {
@@ -519,8 +564,8 @@ h3 {
 }
 
 footer {
-    padding: 10px 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 1rem;
+    border-top: 1px solid var(--footer-border-color, rgba(0, 0, 0, 0.1));
     margin-left: -1rem;
     margin-right: -1rem;
     display: flex;
@@ -533,8 +578,6 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
-
 
 
     @media (min-width: 768px) {
@@ -588,13 +631,37 @@ footer {
         }
     }
 
-
-
-
     .footer-tagline {
         text-align: center;
         font-size: 16px;
         color: var(--base-400);
     }
 
+}
+
+/* Theme toggle icon */
+.modeIcon {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#darkModeToggle {
+    color: var(--base-800);
+    margin-left: 1rem;
+    width: 2.5rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+body.dark-mode .invertedImg {
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode footer {
+    --footer-border-color: rgba(255, 255, 255, 0.1);
 }
