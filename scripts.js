@@ -39,3 +39,19 @@ darkModeToggle.addEventListener("click", () => {
     setTheme("dark");
   }
 });
+
+// Scroll observer for animations
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll("[data-animate]").forEach((el) => {
+  observer.observe(el);
+});

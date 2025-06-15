@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
@@ -85,8 +85,18 @@
           </li>
         </ul>
         <div id="darkModeToggle">
-          <img src="./imgs/moon.png" alt="Moon icon" class="modeIcon moon" />
-          <img src="./imgs/sun.png" alt="Moon icon" class="modeIcon sun" />
+          <img
+            src="./imgs/moon.png"
+            alt="Moon icon"
+            class="modeIcon moon"
+            width="100%"
+          />
+          <img
+            src="./imgs/sun.png"
+            alt="Moon icon"
+            class="modeIcon sun"
+            width="100%"
+          />
         </div>
         <a class="mobile-toggle" href="#" onclick="toggleMobileMenu()">
           <svg
@@ -113,7 +123,10 @@
       <section class="hero container">
         <div class="hero-blue">
           <div>
-            <h1><small>Hi, my name is </small>Peter Sadek</h1>
+            <h1>
+              <small>Hi, my name is </small>
+              <span class="fade-up">Peter Sadek</span>
+            </h1>
             <p>
               I’m a front-end developer with a solid foundation in modern web
               development technologies. With a keen eye for detail and a drive
@@ -174,9 +187,10 @@
         </div>
         <div class="hero-yellow">
           <img
-            src="./imgs/20241002_152115-removebg-preview.png"
+            src="./imgs/peter-no-background.webp"
             alt="Peter Sadek"
             width="100%"
+            class="fade-rightin"
           />
         </div>
       </section>
@@ -286,7 +300,7 @@
           Experience
         </h2>
         <div class="jobs">
-          <article>
+          <article data-animate>
             <h3>Front-End Developer</h3>
             <i>DB Investing</i>
             <div>04/2025 – present</div>
@@ -307,7 +321,7 @@
             </ul>
           </article>
 
-          <article>
+          <article data-animate>
             <h3>Freelance Front-End Developer</h3>
             <i>Freelance</i>
             <div>01/2024 – 04/2025</div>
@@ -325,7 +339,7 @@
             </ul>
           </article>
 
-          <article>
+          <article data-animate>
             <h3>Front-End & Cross-Platform Mobile Development Trainee</h3>
             <i>Information Technology Institute - Intensive Code Camp</i>
             <div>05/2024 – 09/2024</div>
@@ -359,10 +373,10 @@
           Completed Projects
         </h2>
         <div class="projects-container">
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://reserve-mate.vercel.app/" target="_blank">
               <img
-                src="./imgs/reserve-mate.png"
+                src="./imgs/reserve-mate.webp"
                 alt="Reserve Mate"
                 width="100%"
             /></a>
@@ -383,7 +397,11 @@
               </p>
               <div class="demo-links">
                 <a href="https://reserve-mate.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="Reserve Mate Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="Reserve Mate Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a
                   href="https://github.com/PeterSadek/Reserve-Mate"
@@ -392,14 +410,15 @@
                     src="./imgs/github.png"
                     alt="Reserve Mate's Repo"
                     width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://adopt-me-ten-beige.vercel.app/" target="_blank"
-              ><img src="./imgs/adopt-me.png" alt="Adopt Me" width="100%"
+              ><img src="./imgs/adopt-me.webp" alt="Adopt Me" width="100%"
             /></a>
 
             <div class="project-content">
@@ -416,21 +435,26 @@
               </p>
               <div class="demo-links">
                 <a href="https://adopt-me-ten-beige.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="Adopt Me Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="Adopt Me Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a href="https://github.com/PeterSadek/Adopt-Me" target="_blank"
                   ><img
                     src="./imgs/github.png"
                     alt="Adopt Me's Repo"
                     width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://game-hub-two-kappa.vercel.app/" target="_blank"
-              ><img src="./imgs/game-hub.png" alt="Game Hub" width="100%"
+              ><img src="./imgs/game-hub.webp" alt="Game Hub" width="100%"
             /></a>
 
             <div class="project-content">
@@ -448,21 +472,26 @@
               </p>
               <div class="demo-links">
                 <a href="https://game-hub-two-kappa.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="Game Hub Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="Game Hub Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a href="https://github.com/PeterSadek/game-hub" target="_blank"
                   ><img
                     src="./imgs/github.png"
                     alt="Game Hub's Repo"
                     width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://eatwell-ten.vercel.app/" target="_blank"
-              ><img src="./imgs/eatwell.png" alt="EatWell" width="100%"
+              ><img src="./imgs/eatwell.webp" alt="EatWell" width="100%"
             /></a>
 
             <div class="project-content">
@@ -478,18 +507,26 @@
               </p>
               <div class="demo-links">
                 <a href="https://eatwell-ten.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="EatWell Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="EatWell Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a href="https://github.com/PeterSadek/eatwell" target="_blank"
-                  ><img src="./imgs/github.png" alt="EatWell's Repo" width="30"
+                  ><img
+                    src="./imgs/github.png"
+                    alt="EatWell's Repo"
+                    width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://meals-app-sage-one.vercel.app/" target="_blank"
-              ><img src="./imgs/react-meals.png" alt="ReactMeals" width="100%"
+              ><img src="./imgs/react-meals.webp" alt="ReactMeals" width="100%"
             /></a>
 
             <div class="project-content">
@@ -506,7 +543,11 @@
               </p>
               <div class="demo-links">
                 <a href="https://meals-app-sage-one.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="ReactMeals Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="ReactMeals Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a
                   href="https://github.com/PeterSadek/meals-app"
@@ -515,14 +556,15 @@
                     src="./imgs/github.png"
                     alt="ReactMeals's Repo"
                     width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-animate>
             <a href="https://mokatafah.vercel.app/" target="_blank"
-              ><img src="./imgs/mokatafah.png" alt="Mokatafah" width="100%"
+              ><img src="./imgs/mokatafah.webp" alt="Mokatafah" width="100%"
             /></a>
 
             <div class="project-content">
@@ -539,7 +581,11 @@
               </p>
               <div class="demo-links">
                 <a href="https://mokatafah.vercel.app/" target="_blank"
-                  ><img src="./imgs/web.png" alt="Mokatafah Live" width="30"
+                  ><img
+                    src="./imgs/web.png"
+                    alt="Mokatafah Live"
+                    width="30"
+                    class="invertedImg"
                 /></a>
                 <a
                   href="https://github.com/PeterSadek/mokatafah"
@@ -548,6 +594,7 @@
                     src="./imgs/github.png"
                     alt="Mokatafah's Repo"
                     width="30"
+                    class="invertedImg"
                 /></a>
               </div>
             </div>
@@ -566,16 +613,31 @@
       </p>
       <div>
         <a href="https://github.com/PeterSadek" target="_blank">
-          <img src="./imgs/github.png" alt="GitHub Logo" width="48" />
+          <img
+            src="./imgs/github.png"
+            alt="GitHub Logo"
+            width="48"
+            class="invertedImg"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
           target="_blank"
         >
-          <img src="./imgs/linkedin.png" alt="LinkedIn Logo" width="52" />
+          <img
+            src="./imgs/linkedin.png"
+            alt="LinkedIn Logo"
+            width="52"
+            class="invertedImg"
+          />
         </a>
         <a href="mailto:Peter_Sadek@outlook.com">
-          <img src="./imgs/email.png" alt="Email Logo" width="48" />
+          <img
+            src="./imgs/email.png"
+            alt="Email Logo"
+            width="48"
+            class="invertedImg"
+          />
         </a>
       </div>
     </footer>

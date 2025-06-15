@@ -125,7 +125,7 @@ header {
             display: flex;
             list-style-type: none;
             gap: 5px;
-            transition: max-height 0.3s ease-in-out;
+            transition: max-height 0.3s linear;
 
             li {
                 display: inline-block;
@@ -136,9 +136,11 @@ header {
                     color: var(--base);
 
                     &:hover {
-                        background: var(--base-100);
+                        background: var(--base-800);
+                        color: var(--base-100);
                         text-decoration: none;
                         border-radius: 5px;
+                        transition: all 300ms linear;
                     }
                 }
             }
@@ -276,6 +278,7 @@ h1 {
 
 .hero {
     display: flex;
+
 
     @media (max-width: 1024px) {
         flex-direction: column;
@@ -536,6 +539,14 @@ h3 {
             }
         }
 
+        div img {
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
         .project-content {
             padding: 30px;
         }
@@ -650,18 +661,71 @@ footer {
 
 #darkModeToggle {
     color: var(--base-800);
-    margin-left: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
     width: 2.5rem;
 
-    img {
-        width: 100%;
+    @media (min-width:769px) {
+        top: 6.8rem
+    }
+
+    @media (min-width:1025px) {
+        position: static;
+        margin-left: 1rem;
     }
 }
 
 body.dark-mode .invertedImg {
-    filter: brightness(0) invert(1);
+    filter: invert(1);
 }
+
 
 body.dark-mode footer {
     --footer-border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* animations */
+@keyframes fade-up-animation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fade-up-animation 500ms linear;
+    display: inline-block;
+}
+
+@keyframes fade-rightin-animation {
+    from {
+        opacity: 0;
+        transform: translatex(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0)
+    }
+}
+
+.fade-rightin {
+    animation: fade-rightin-animation 500ms linear;
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translatey(50px);
+    transition: all 500ms linear;
+}
+
+[data-animate].animate {
+    opacity: 1;
+    transform: translatey(0);
 }
