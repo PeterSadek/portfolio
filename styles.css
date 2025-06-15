@@ -78,10 +78,14 @@ body.dark-mode {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px 1rem;
+    padding: 16px 1rem 32px 1rem;
     margin-left: -1rem;
     margin-right: -1rem;
     border: 1px solid var(--header-border-color, rgba(0, 0, 0, 0.1));
+
+    @media (min-width:769px) {
+        padding: 16px 1rem;
+    }
 
 
     .logo-holder {
@@ -663,7 +667,7 @@ footer {
     color: var(--base-800);
     position: absolute;
     right: 1rem;
-    top: 5rem;
+    top: 6rem;
     width: 2.5rem;
 
     @media (min-width:769px) {
