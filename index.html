@@ -644,55 +644,73 @@
         </div>
       </section>
 
-      <section class="chatbot container">
-        <h2><small>Talk to me</small> Chatbot</h2>
+      <!-- Floating Chatbot Widget -->
+      <div id="floating-chatbot-container">
+        <!-- Chatbot Toggle Button -->
+        <button id="chatbot-toggle-button">
+          <!-- SVG Chat Icon -->
+          <svg
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+            ></path>
+          </svg>
+        </button>
 
-        <div class="chatbot-blue">
-          <div class="chat-info">
+        <!-- Chat Box Widget  -->
+        <div id="chat-box-widget">
+          <!-- Chat header -->
+          <div class="chat-header">
             <h3>AI Chatbot</h3>
-            <p>
-              I've put together a chatbot here which knows all my skills, work
-              experience and has a copy of my Resume. You can use it to ask
-              questions about me to get a better idea of who I am and what I've
-              done.
-            </p>
-            <p>
-              You can also download my resume here if you want to take a look at
-              it.
-            </p>
-            <a class="button black" href="./Peter_Sadek_Resume.pdf"
-              >Download Resume</a
-            >
+            <button id="close-button" class="chat-close-button">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <div class="chat-box">
-            <div class="scroll-area">
-              <ul id="chat-log">
-                <li>
-                  <span class="avatar bot">AI</span>
-                  <div class="message">
-                    Hi, I'm a friendly chatbot that lets you interact with this
-                    portfolio and resume. How can I help?
-                  </div>
-                </li>
 
-                <!-- <li>
-                  <span class="avatar user">User</span>
-                  <div class="message">
-                    I have a question to ask you about this resume
-                  </div>
-                </li> -->
-              </ul>
-            </div>
-            <div class="chat-message">
-              <input
-                type="text"
-                placeholder="Hey Peter, what skills are you best at?"
-              />
-              <button class="button black">Send</button>
-            </div>
+          <!-- Chat log area -->
+          <div id="chat-log-area">
+            <ul id="chat-log">
+              <!-- Initial bot message -->
+              <li class="chat-message-item bot message-fade-in">
+                <span class="avatar bot">AI</span>
+                <div class="message bot">
+                  Hi, I'm a friendly chatbot that lets you interact with Peter's
+                  portfolio. How can I help?
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Chat input and send button -->
+          <div class="chat-input-area">
+            <input
+              id="user-input"
+              type="text"
+              placeholder="Ask me a question..."
+            />
+            <button id="send-button">Send</button>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="site-footer">
