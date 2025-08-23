@@ -69,58 +69,60 @@
   </head>
   <body>
     <header>
-      <a class="logo-holder" href="#">
-        <div class="logo">P</div>
-        <div class="logo-text">Peter Sadek</div>
-      </a>
-      <nav>
-        <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li>
-            <a class="button" href="mailto:peter_sadek@outlook.com"
-              >Contact Me</a
-            >
-          </li>
-        </ul>
-        <div id="darkModeToggle">
-          <img
-            src="./imgs/moon.png"
-            alt="Moon icon"
-            class="modeIcon moon"
-            width="100%"
-          />
-          <img
-            src="./imgs/sun.png"
-            alt="Moon icon"
-            class="modeIcon sun"
-            width="100%"
-          />
-        </div>
-        <a class="mobile-toggle" href="#" onclick="toggleMobileMenu()">
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
-              d="M5 7h14M5 12h14M5 17h10"
-            />
-          </svg>
+      <div class="header-container">
+        <a class="logo-holder" href="#">
+          <div class="logo">P</div>
+          <div class="logo-text">Peter Sadek</div>
         </a>
-      </nav>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a class="button" href="mailto:peter_sadek@outlook.com"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <div id="darkModeToggle">
+            <img
+              src="./imgs/moon.png"
+              alt="Moon icon"
+              class="modeIcon moon"
+              width="100%"
+            />
+            <img
+              src="./imgs/sun.png"
+              alt="Moon icon"
+              class="modeIcon sun"
+              width="100%"
+            />
+          </div>
+          <a class="mobile-toggle" href="#" onclick="toggleMobileMenu()">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M5 7h14M5 12h14M5 17h10"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero container">
+      <section class="hero container" id="hero">
         <div class="hero-blue">
           <div>
             <h1>
@@ -137,6 +139,7 @@
                 href="./Peter_Sadek_Resume.pdf"
                 target="_blank"
                 class="button black"
+                id="resume-link"
                 >View Resume</a
               >
               <a
@@ -146,12 +149,17 @@
               >
             </div>
             <div class="social-links">
-              <a href="https://github.com/PeterSadek" target="_blank">
+              <a
+                href="https://github.com/PeterSadek"
+                target="_blank"
+                id="github-link"
+              >
                 <img src="./imgs/github.png" alt="GitHub Logo" width="48" />
               </a>
               <a
                 href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
                 target="_blank"
+                id="linkedin-link"
               >
                 <img src="./imgs/linkedin.png" alt="LinkedIn Logo" width="48" />
               </a>
@@ -194,57 +202,85 @@
           />
         </div>
       </section>
-      <section class="logos container">
-        <div class="marquee">
-          <div class="track">
-            <img src="./imgs/html.png" alt="HTML" width="128" />
-            <img src="./imgs/css.png" alt="CSS" width="128" />
-            <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
-            <img src="./imgs/react.png" alt="React" width="128" />
-            <img
-              src="./imgs/astro.png"
-              alt="Astro"
-              width="128"
-              height="128"
-              class="invertedImg"
-            />
-            <img src="./imgs/restapi.png" alt="REST API" width="128" />
-            <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
-            <img src="./imgs/materialui.png" alt="Material UI" width="128" />
-            <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
-            <img src="./imgs/redux.png" alt="Redux" width="128" />
-            <img src="./imgs/vscode.png" alt="VS Code" width="128" />
-            <img src="./imgs/figma.png" alt="Figma" width="128" />
-            <img
-              src="./imgs/github-mark.svg"
-              alt="GitHub"
-              width="128"
-              class="invertedImg"
-            />
-            <img src="./imgs/html.png" alt="HTML" width="128" />
-            <img src="./imgs/css.png" alt="CSS" width="128" />
-            <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
-            <img src="./imgs/react.png" alt="React" width="128" />
-            <img
-              src="./imgs/astro.png"
-              alt="Astro"
-              width="128"
-              height="128"
-              class="invertedImg"
-            />
-            <img src="./imgs/restapi.png" alt="REST API" width="128" />
-            <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
-            <img src="./imgs/materialui.png" alt="Material UI" width="128" />
-            <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
-            <img src="./imgs/redux.png" alt="Redux" width="128" />
-            <img src="./imgs/vscode.png" alt="VS Code" width="128" />
-            <img src="./imgs/figma.png" alt="Figma" width="128" />
-            <img
-              src="./imgs/github-mark.svg"
-              alt="GitHub"
-              width="128"
-              class="invertedImg"
-            />
+      <section class="logos">
+        <div class="container">
+          <div class="marquee">
+            <div class="track">
+              <img src="./imgs/html.png" alt="HTML" width="128" />
+              <img src="./imgs/css.png" alt="CSS" width="128" />
+              <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
+              <img src="./imgs/react.png" alt="React" width="128" />
+              <img
+                src="./imgs/astro.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img
+                src="./imgs/nextjs.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img src="./imgs/restapi.png" alt="REST API" width="128" />
+              <img
+                src="./imgs/shadcn.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
+              <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
+              <img src="./imgs/redux.png" alt="Redux" width="128" />
+              <img src="./imgs/vscode.png" alt="VS Code" width="128" />
+              <img src="./imgs/figma.png" alt="Figma" width="128" />
+              <img
+                src="./imgs/github-mark.svg"
+                alt="GitHub"
+                width="128"
+                class="invertedImg"
+              />
+              <img src="./imgs/html.png" alt="HTML" width="128" />
+              <img src="./imgs/css.png" alt="CSS" width="128" />
+              <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
+              <img src="./imgs/react.png" alt="React" width="128" />
+              <img
+                src="./imgs/astro.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img
+                src="./imgs/nextjs.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img src="./imgs/restapi.png" alt="REST API" width="128" />
+              <img
+                src="./imgs/shadcn.png"
+                alt="Astro"
+                width="128"
+                height="128"
+                class="invertedImg"
+              />
+              <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
+              <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
+              <img src="./imgs/redux.png" alt="Redux" width="128" />
+              <img src="./imgs/vscode.png" alt="VS Code" width="128" />
+              <img src="./imgs/figma.png" alt="Figma" width="128" />
+              <img
+                src="./imgs/github-mark.svg"
+                alt="GitHub"
+                width="128"
+                class="invertedImg"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -265,10 +301,11 @@
             <ul>
               <li>React</li>
               <li>Astro</li>
+              <li>Next.js</li>
               <li>Redux</li>
               <li>Tailwind CSS</li>
+              <li>Shadcn</li>
               <li>Bootstrap</li>
-              <li>Material UI</li>
             </ul>
             <h3>Tools & Technologies</h3>
             <ul>
@@ -294,7 +331,7 @@
           </div>
         </div>
       </section>
-      <section class="experience container">
+      <section class="experience container" id="experience">
         <h2>
           <small>Recent</small>
           Experience
@@ -305,6 +342,11 @@
             <i>DB Investing</i>
             <div>04/2025 – present</div>
             <ul>
+              <li>
+                Contributed to the development of an educational platform using
+                Next.js and Shadcn, focusing on modern UI/UX and content
+                delivery.
+              </li>
               <li>
                 Worked on multiple company-related websites using Astro.js and
                 Tailwind CSS, delivering fast and SEO-optimized front-end
@@ -601,44 +643,96 @@
           </article>
         </div>
       </section>
+
+      <section class="chatbot container">
+        <h2><small>Talk to me</small> Chatbot</h2>
+
+        <div class="chatbot-blue">
+          <div class="chat-info">
+            <h3>AI Chatbot</h3>
+            <p>
+              I've put together a chatbot here which knows all my skills, work
+              experience and has a copy of my Resume. You can use it to ask
+              questions about me to get a better idea of who I am and what I've
+              done.
+            </p>
+            <p>
+              You can also download my resume here if you want to take a look at
+              it.
+            </p>
+            <a class="button black" href="./Peter_Sadek_Resume.pdf"
+              >Download Resume</a
+            >
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span class="avatar bot">AI</span>
+                  <div class="message">
+                    Hi, I'm a friendly chatbot that lets you interact with this
+                    portfolio and resume. How can I help?
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <span class="avatar user">User</span>
+                  <div class="message">
+                    I have a question to ask you about this resume
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input
+                type="text"
+                placeholder="Hey Peter, what skills are you best at?"
+              />
+              <button class="button black">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <a class="logo-holder" href="#">
-        <div class="logo">P</div>
-        <div class="logo-text">Peter Sadek</div>
-      </a>
-      <p class="footer-tagline">
-        Building intuitive, pixel-perfect experiences.
-      </p>
-      <div>
-        <a href="https://github.com/PeterSadek" target="_blank">
-          <img
-            src="./imgs/github.png"
-            alt="GitHub Logo"
-            width="48"
-            class="invertedImg"
-          />
+      <div class="footer-container">
+        <a class="logo-holder" href="#">
+          <div class="logo">P</div>
+          <div class="logo-text">Peter Sadek</div>
         </a>
-        <a
-          href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
-          target="_blank"
-        >
-          <img
-            src="./imgs/linkedin.png"
-            alt="LinkedIn Logo"
-            width="52"
-            class="invertedImg"
-          />
-        </a>
-        <a href="mailto:Peter_Sadek@outlook.com">
-          <img
-            src="./imgs/email.png"
-            alt="Email Logo"
-            width="48"
-            class="invertedImg"
-          />
-        </a>
+        <p class="footer-tagline">
+          Building intuitive, pixel-perfect experiences.
+        </p>
+        <div>
+          <a href="https://github.com/PeterSadek" target="_blank">
+            <img
+              src="./imgs/github.png"
+              alt="GitHub Logo"
+              width="48"
+              class="invertedImg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
+            target="_blank"
+          >
+            <img
+              src="./imgs/linkedin.png"
+              alt="LinkedIn Logo"
+              width="52"
+              class="invertedImg"
+            />
+          </a>
+          <a href="mailto:Peter_Sadek@outlook.com">
+            <img
+              src="./imgs/email.png"
+              alt="Email Logo"
+              width="48"
+              class="invertedImg"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
