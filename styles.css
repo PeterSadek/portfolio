@@ -754,7 +754,6 @@ body.dark-mode footer {
 #chatbot-toggle-button:focus {
     outline: none;
     box-shadow: 0 0 0 1px var(--base-400);
-    /* Simulating focus ring */
 }
 
 #chatbot-toggle-button svg {
@@ -772,13 +771,10 @@ body.dark-mode footer {
     height: 30rem;
     border-radius: 1.5rem;
     background-color: var(--base-200);
-    color: var(--chatbot-text);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 1rem;
     display: flex;
     flex-direction: column;
-
-    /* Hide the chat box by default */
     transform: translateY(20px) scale(0.95);
     opacity: 0;
     visibility: hidden;
@@ -889,13 +885,15 @@ body.dark-mode footer {
 
 .chat-message-item .avatar.user {
     background-color: var(--yellow);
+    color: black
 }
 
 .chat-message-item .message {
     padding: 1rem;
     border-radius: 0.75rem;
-    max-width: 100%;
+    max-width: 80%;
     overflow-wrap: break-word;
+    font-size: 1rem;
 }
 
 .chat-message-item .message.bot {
@@ -906,7 +904,7 @@ body.dark-mode footer {
 
 .chat-message-item .message.user {
     background-color: var(--yellow);
-    color: #1f2937;
+    color: black;
     border-bottom-right-radius: 0;
 }
 
@@ -940,6 +938,7 @@ body.dark-mode footer {
     border-radius: 0.75rem;
     background-color: var(--base-200);
     border: 1px solid var(--base-400);
+    color: var(--base);
 
     @media (max-width: 420px) {
         width: 11rem;
