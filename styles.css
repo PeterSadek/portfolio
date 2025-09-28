@@ -82,16 +82,24 @@ header {
     border: 1px solid var(--header-border-color, rgba(0, 0, 0, 0.1));
     margin-left: -1rem;
     margin-right: -1rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--base-100);
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+
 
     .header-container {
-        padding: 16px 1rem 32px 1rem;
+        padding: 16px 1rem 16px 1rem;
         display: flex;
         justify-content: space-between;
         max-width: 1440px;
         margin: 0 auto;
+        position: relative;
 
-        @media (min-width:769px) {
-            padding: 16px 1rem;
+        @media (max-width:768px) {
+            padding: 8px 1rem;
         }
 
         .logo-holder {
@@ -104,9 +112,6 @@ header {
                 align-self: flex-start;
             }
 
-            @media (max-width:1024px) {
-                padding: 10px
-            }
 
             .logo {
                 display: flex;
@@ -164,7 +169,7 @@ header {
 
             .mobile-toggle {
                 display: none;
-                padding: 10px;
+                /* padding: 10px; */
                 color: var(--base-800);
 
                 @media (max-width:768px) {
@@ -211,11 +216,10 @@ header {
         }
     }
 
+}
 
-
-
-
-
+header.header-hidden {
+    transform: translateY(-100%);
 }
 
 body.dark-mode header {
@@ -715,19 +719,27 @@ footer {
 
 #darkModeToggle {
     color: var(--base-800);
-    position: absolute;
-    right: 1rem;
-    top: 6rem;
     width: 2.5rem;
+    margin-left: 1rem;
 
     &:hover {
         cursor: pointer;
-        /* transform: scale(1.1); */
         opacity: 0.8;
     }
 
+
+    @media (max-width: 768px) {
+
+        position: absolute;
+        top: 25px;
+        right: 70px;
+        margin-left: 0;
+        order: 99;
+
+    }
+
     @media (min-width:769px) {
-        top: 6.8rem
+        margin-left: 1rem;
     }
 
     @media (min-width:1025px) {

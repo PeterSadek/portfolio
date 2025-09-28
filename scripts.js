@@ -1,4 +1,5 @@
-function toggleMobileMenu() {
+function toggleMobileMenu(event) {
+  event.preventDefault(); 
   document.getElementById("menu").classList.toggle("active");
 }
 
@@ -38,6 +39,28 @@ darkModeToggle.addEventListener("click", () => {
   } else {
     setTheme("dark");
   }
+});
+
+// Header scroll logic
+const header = document.querySelector("header");
+const mobileMenu = document.getElementById("menu");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  if (mobileMenu.classList.contains("active")) {
+    header.classList.remove("header-hidden"); 
+    lastScrollY = currentScrollY;
+    return; 
+  }
+  if (currentScrollY > lastScrollY) {
+    header.classList.add("header-hidden");
+  } else if (currentScrollY < lastScrollY) {
+    header.classList.remove("header-hidden");
+  }
+
+  lastScrollY = currentScrollY;
 });
 
 // Scroll observer for animations
