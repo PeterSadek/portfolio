@@ -10,7 +10,7 @@ module.exports = async function handler(req, res) {
   const { systemPrompt, userMessage } = req.body;
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const result = await model.generateContent(
       `${systemPrompt}\n\nUser Question: ${userMessage}`
