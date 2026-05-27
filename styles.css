@@ -541,6 +541,17 @@ h3 {
     margin: auto;
     margin-bottom: 30px;
 
+    .projects-intro {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        color: var(--base-400);
+    }
+
+    .project-link-disabled {
+        cursor: default;
+    }
+
 
     .projects-container {
         display: flex;
@@ -558,7 +569,7 @@ h3 {
 
     .project {
         flex: 0 1 calc(50% - 10px);
-        background-color: var(--base-100);
+        background-color: var(--base-200);
         border-radius: 30px;
         overflow: hidden;
         display: flex;
