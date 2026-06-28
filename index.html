@@ -1,60 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Sadek | Front-End Developer</title>
-    <meta
-      name="description"
-      content="Peter Sadek is a Front-End Developer building websites and web apps with React, Next.js, TypeScript, and Astro. He focuses on clear interfaces, strong performance, and multilingual user experiences."
-    />
-    <meta
-      name="keywords"
-      content="Peter Sadek, Front-End Developer, React, Next.js, TypeScript, Astro, JavaScript, Tailwind CSS, Shadcn UI, responsive web design, accessibility, SEO, internationalization"
-    />
-    <meta name="author" content="Peter Sadek" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Social media card -->
-    <meta property="og:title" content="Peter Sadek | Front-End Developer" />
-    <meta
-      property="og:description"
-      content="Front-End Developer building websites and web apps with React, Next.js, and TypeScript, with a focus on usability and performance."
-    />
-    <meta
-      property="og:image"
-      content="https://petersadek.vercel.app/imgs/og-peter.png"
-    />
-    <meta property="og:image:alt" content="Peter Sadek Portfolio Preview" />
-    <meta property="og:url" content="https://petersadek.vercel.app/" />
-    <meta property="og:site_name" content="Peter Sadek Portfolio" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Sadek | Front-End Developer</title>
+  <meta name="description"
+    content="Peter Sadek is a Front-End Developer building websites and web apps with React, Next.js, TypeScript, and Astro. He focuses on clear interfaces, strong performance, and multilingual user experiences." />
+  <meta name="keywords"
+    content="Peter Sadek, Front-End Developer, React, Next.js, TypeScript, Astro, JavaScript, Tailwind CSS, Shadcn UI, responsive web design, accessibility, SEO, internationalization" />
+  <meta name="author" content="Peter Sadek" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Peter Sadek | Front-End Developer" />
-    <meta
-      name="twitter:description"
-      content="Front-End Developer building websites and web apps with React, Next.js, and TypeScript, with a focus on usability and performance."
-    />
-    <meta
-      name="twitter:image"
-      content="https://petersadek.vercel.app/imgs/og-peter.png"
-    />
-    <meta name="twitter:image:alt" content="Peter Sadek Portfolio Preview" />
+  <!-- Social media card -->
+  <meta property="og:title" content="Peter Sadek | Front-End Developer" />
+  <meta property="og:description"
+    content="Front-End Developer building websites and web apps with React, Next.js, and TypeScript, with a focus on usability and performance." />
+  <meta property="og:image" content="https://petersadek.vercel.app/imgs/og-peter.png" />
+  <meta property="og:image:alt" content="Peter Sadek Portfolio Preview" />
+  <meta property="og:url" content="https://petersadek.vercel.app/" />
+  <meta property="og:site_name" content="Peter Sadek Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="preload"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js" defer></script>
-    <link rel="shortcut icon" href="imgs/ppixel.png" type="image/x-icon" />
-    <link rel="canonical" href="https://petersadek.vercel.app/" />
-    <script type="application/ld+json">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Peter Sadek | Front-End Developer" />
+  <meta name="twitter:description"
+    content="Front-End Developer building websites and web apps with React, Next.js, and TypeScript, with a focus on usability and performance." />
+  <meta name="twitter:image" content="https://petersadek.vercel.app/imgs/og-peter.png" />
+  <meta name="twitter:image:alt" content="Peter Sadek Portfolio Preview" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="preload" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+  <link rel="shortcut icon" href="imgs/ppixel.png" type="image/x-icon" />
+  <link rel="canonical" href="https://petersadek.vercel.app/" />
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -77,456 +62,329 @@
         }
       }
     </script>
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <a class="logo-holder" href="#">
-          <div class="logo">P</div>
-          <div class="logo-text">Peter Sadek</div>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo-holder" href="#">
+        <div class="logo">P</div>
+        <div class="logo-text">Peter Sadek</div>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a class="button" href="mailto:peter_sadek@outlook.com">Contact Me</a>
+          </li>
+        </ul>
+        <div id="darkModeToggle">
+          <img src="./imgs/moon.png" alt="Moon icon" class="modeIcon moon" width="100%" />
+          <img src="./imgs/sun.png" alt="Moon icon" class="modeIcon sun" width="100%" />
+        </div>
+        <a class="mobile-toggle" href="#" onclick="toggleMobileMenu(event)" title="Open navigation menu"
+          aria-label="Open navigation menu">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="48" height="48" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+          </svg>
         </a>
-        <nav>
-          <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li>
-              <a class="button" href="mailto:peter_sadek@outlook.com"
-                >Contact Me</a
-              >
-            </li>
-          </ul>
-          <div id="darkModeToggle">
-            <img
-              src="./imgs/moon.png"
-              alt="Moon icon"
-              class="modeIcon moon"
-              width="100%"
-            />
-            <img
-              src="./imgs/sun.png"
-              alt="Moon icon"
-              class="modeIcon sun"
-              width="100%"
-            />
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div class="hero-blue">
+        <div>
+          <h1>
+            <small>Hi, my name is </small>
+            <span class="fade-up">Peter Sadek</span>
+          </h1>
+          <p>
+            I'm a front-end developer who builds modern, scalable web products
+            with React, Next.js, TypeScript, and Astro. I enjoy turning
+            complex ideas into clear, fast, and easy-to-use interfaces, with
+            strong attention to accessibility and clean front-end structure.
+          </p>
+          <div class="call-to-action">
+            <a href="./Peter_Sadek_Resume.pdf" target="_blank" rel="noopener noreferrer" class="button black"
+              id="resume-link">View Resume</a>
+            <a href="mailto:peter_sadek@outlook.com" class="button white contactBtn">Contact Me</a>
           </div>
-          <a
-            class="mobile-toggle"
-            href="#"
-            onclick="toggleMobileMenu(event)"
-            title="Open navigation menu"
-            aria-label="Open navigation menu"
-          >
-            <svg
-              class="w-6 h-6 text-gray-800 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-width="2"
-                d="M5 7h14M5 12h14M5 17h10"
-              />
-            </svg>
-          </a>
-        </nav>
+          <div class="social-links">
+            <a href="https://github.com/PeterSadek" target="_blank" rel="noopener noreferrer" id="github-link">
+              <img src="./imgs/github.png" alt="GitHub Logo" width="48" />
+            </a>
+            <a href="https://www.linkedin.com/in/peter-sadek-9317611b3/" target="_blank" rel="noopener noreferrer"
+              id="linkedin-link">
+              <img src="./imgs/linkedin.png" alt="LinkedIn Logo" width="48" />
+            </a>
+          </div>
+          <div class="contacts">
+            <div class="contact">
+              <a href="mailto:Peter_Sadek@outlook.com">
+                <img src="./imgs/email.png" alt="Email Logo" width="40" />
+                <span>Peter_Sadek@outlook.com</span>
+              </a>
+            </div>
+            <div class="contact">
+              <a href="tel:+20 1202367698">
+                <img src="./imgs/phone.png" alt="Phone Logo" width="40" />
+                <span>(+20) 1202367698</span>
+              </a>
+            </div>
+            <div class="contact">
+              <a href="https://maps.app.goo.gl/5bJarrh172Tn9e1u6" target="_blank" rel="noopener noreferrer">
+                <img src="./imgs/location-pin.png" alt="Location Icon" width="40" />
+                <span>Egypt</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+      <div class="hero-yellow">
+        <img src="./imgs/peter-no-background.webp" alt="Peter Sadek" width="100%" class="fade-rightin" />
+      </div>
+    </section>
+    <section class="logos">
+      <div class="container">
+        <div class="marquee">
+          <div class="track">
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/astro.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/nextjs.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/restapi.png" alt="REST API" width="128" />
+            <img src="./imgs/shadcn.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
+            <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
+            <img src="./imgs/redux.png" alt="Redux" width="128" />
+            <img src="./imgs/vscode.png" alt="VS Code" width="128" />
+            <img src="./imgs/figma.png" alt="Figma" width="128" />
+            <img src="./imgs/github-mark.svg" alt="GitHub" width="128" class="invertedImg" />
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/astro.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/nextjs.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/restapi.png" alt="REST API" width="128" />
+            <img src="./imgs/shadcn.png" alt="Astro" width="128" height="128" class="invertedImg" />
+            <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
+            <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
+            <img src="./imgs/redux.png" alt="Redux" width="128" />
+            <img src="./imgs/vscode.png" alt="VS Code" width="128" />
+            <img src="./imgs/figma.png" alt="Figma" width="128" />
+            <img src="./imgs/github-mark.svg" alt="GitHub" width="128" class="invertedImg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills container">
+      <h2>
+        <small>About Me</small>
+        Skills
+      </h2>
+      <div class="holder-blue">
+        <div class="left-column">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+          <h3>Frameworks/Libraries</h3>
+          <ul>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Astro</li>
+            <li>Redux</li>
+            <li>Zustand</li>
+            <li>Tailwind CSS</li>
+            <li>Shadcn/UI</li>
+            <li>Bootstrap</li>
+            <!-- <li>Material UI</li> -->
+          </ul>
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>REST APIs</li>
+            <li>Supabase</li>
+            <li>Firebase</li>
+            <li>Figma</li>
+            <li>Zod Validation</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <h3>A bit about me</h3>
+          <p>
+            Hi, I'm Peter, a front-end developer with a Bachelor's degree in
+            Computer Science. I also completed an intensive scholarship at the
+            Information Technology Institute (ITI), where I built real-world
+            projects that strengthened my front-end and product development
+            foundation.
+          </p>
+          <p>
+            I specialize in building performant, accessible web applications
+            with modern technologies like React, Next.js, and TypeScript. My
+            work spans internationalization, complex state management, API
+            integrations, and responsive design across corporate websites,
+            campaign platforms, customer portals, and personal products.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="experience container" id="experience">
+      <h2>
+        <small>Recent</small>
+        Experience
+      </h2>
+      <div class="jobs">
+        <article data-animate>
+          <h3>Front-End Developer</h3>
+          <i>DB Investing</i>
+          <div>04/2025 – present</div>
+          <ul>
+            <li>
+              Delivered comprehensive frontend development across
+              <strong>15+ web projects</strong> for DB Investing, from
+              corporate websites to campaign pages and customer-facing tools.
+            </li>
+            <li>
+              Built production-ready applications using
+              <strong>Next.js, Astro.js, React, TypeScript, Tailwind CSS, and
+                Shadcn/UI</strong>, focusing on performance, scalability, and maintainability.
+            </li>
+            <li>
+              Built complex features including
+              <strong>IB Dashboard</strong> with hierarchical data
+              visualization, <strong>KYC integration</strong> using Sumsub
+              SDK, interactive event calendars, advanced filtering systems
+              with 8+ filter types, and real-time data updates.
+            </li>
 
-    <main>
-      <section class="hero container" id="hero">
-        <div class="hero-blue">
-          <div>
-            <h1>
-              <small>Hi, my name is </small>
-              <span class="fade-up">Peter Sadek</span>
-            </h1>
-            <p>
-              I'm a front-end developer who builds modern, scalable web products
-              with React, Next.js, TypeScript, and Astro. I enjoy turning
-              complex ideas into clear, fast, and easy-to-use interfaces, with
-              strong attention to accessibility and clean front-end structure.
-            </p>
-            <div class="call-to-action">
-              <a
-                href="./Peter_Sadek_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button black"
-                id="resume-link"
-                >View Resume</a
-              >
-              <a
-                href="mailto:peter_sadek@outlook.com"
-                class="button white contactBtn"
-                >Contact Me</a
-              >
-            </div>
-            <div class="social-links">
-              <a
-                href="https://github.com/PeterSadek"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="github-link"
-              >
-                <img src="./imgs/github.png" alt="GitHub Logo" width="48" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="linkedin-link"
-              >
-                <img src="./imgs/linkedin.png" alt="LinkedIn Logo" width="48" />
-              </a>
-            </div>
-            <div class="contacts">
-              <div class="contact">
-                <a href="mailto:Peter_Sadek@outlook.com">
-                  <img src="./imgs/email.png" alt="Email Logo" width="40" />
-                  <span>Peter_Sadek@outlook.com</span>
-                </a>
-              </div>
-              <div class="contact">
-                <a href="tel:+20 1202367698">
-                  <img src="./imgs/phone.png" alt="Phone Logo" width="40" />
-                  <span>(+20) 1202367698</span>
-                </a>
-              </div>
-              <div class="contact">
-                <a
-                  href="https://maps.app.goo.gl/5bJarrh172Tn9e1u6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./imgs/location-pin.png"
-                    alt="Location Icon"
-                    width="40"
-                  />
-                  <span>Egypt</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-yellow">
-          <img
-            src="./imgs/peter-no-background.webp"
-            alt="Peter Sadek"
-            width="100%"
-            class="fade-rightin"
-          />
-        </div>
-      </section>
-      <section class="logos">
-        <div class="container">
-          <div class="marquee">
-            <div class="track">
-              <img src="./imgs/html.png" alt="HTML" width="128" />
-              <img src="./imgs/css.png" alt="CSS" width="128" />
-              <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
-              <img src="./imgs/react.png" alt="React" width="128" />
-              <img
-                src="./imgs/astro.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img
-                src="./imgs/nextjs.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img src="./imgs/restapi.png" alt="REST API" width="128" />
-              <img
-                src="./imgs/shadcn.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
-              <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
-              <img src="./imgs/redux.png" alt="Redux" width="128" />
-              <img src="./imgs/vscode.png" alt="VS Code" width="128" />
-              <img src="./imgs/figma.png" alt="Figma" width="128" />
-              <img
-                src="./imgs/github-mark.svg"
-                alt="GitHub"
-                width="128"
-                class="invertedImg"
-              />
-              <img src="./imgs/html.png" alt="HTML" width="128" />
-              <img src="./imgs/css.png" alt="CSS" width="128" />
-              <img src="./imgs/javascript.png" alt="JavaScript" width="128" />
-              <img src="./imgs/react.png" alt="React" width="128" />
-              <img
-                src="./imgs/astro.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img
-                src="./imgs/nextjs.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img src="./imgs/restapi.png" alt="REST API" width="128" />
-              <img
-                src="./imgs/shadcn.png"
-                alt="Astro"
-                width="128"
-                height="128"
-                class="invertedImg"
-              />
-              <img src="./imgs/tailwind.svg" alt="Tailwind" width="128" />
-              <img src="./imgs/bootstrap.png" alt="Bootstrap" width="128" />
-              <img src="./imgs/redux.png" alt="Redux" width="128" />
-              <img src="./imgs/vscode.png" alt="VS Code" width="128" />
-              <img src="./imgs/figma.png" alt="Figma" width="128" />
-              <img
-                src="./imgs/github-mark.svg"
-                alt="GitHub"
-                width="128"
-                class="invertedImg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="skills" class="skills container">
-        <h2>
-          <small>About Me</small>
-          Skills
-        </h2>
-        <div class="holder-blue">
-          <div class="left-column">
-            <h3>Languages</h3>
-            <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <h3>Frameworks/Libraries</h3>
-            <ul>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Astro</li>
-              <li>Redux</li>
-              <li>Zustand</li>
-              <li>Tailwind CSS</li>
-              <li>Shadcn/UI</li>
-              <li>Bootstrap</li>
-              <!-- <li>Material UI</li> -->
-            </ul>
-            <h3>Tools & Technologies</h3>
-            <ul>
-              <li>Git & GitHub</li>
-              <li>REST APIs</li>
-              <li>Supabase</li>
-              <li>Firebase</li>
-              <li>Figma</li>
-              <li>Zod Validation</li>
-            </ul>
-          </div>
-          <div class="right-column">
-            <h3>A bit about me</h3>
-            <p>
-              Hi, I'm Peter, a front-end developer with a Bachelor's degree in
-              Computer Science. I also completed an intensive scholarship at the
-              Information Technology Institute (ITI), where I built real-world
-              projects that strengthened my front-end and product development
-              foundation.
-            </p>
-            <p>
-              I specialize in building performant, accessible web applications
-              with modern technologies like React, Next.js, and TypeScript. My
-              work spans internationalization, complex state management, API
-              integrations, and responsive design across corporate websites,
-              campaign platforms, customer portals, and personal products.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="experience container" id="experience">
-        <h2>
-          <small>Recent</small>
-          Experience
-        </h2>
-        <div class="jobs">
-          <article data-animate>
-            <h3>Front-End Developer</h3>
-            <i>DB Investing</i>
-            <div>04/2025 – present</div>
-            <ul>
-              <li>
-                Delivered comprehensive frontend development across
-                <strong>15+ web projects</strong> for DB Investing, from
-                corporate websites to campaign pages and customer-facing tools.
-              </li>
-              <li>
-                Built production-ready applications using
-                <strong
-                  >Next.js, Astro.js, React, TypeScript, Tailwind CSS, and
-                  Shadcn/UI</strong
-                >, focusing on performance, scalability, and maintainability.
-              </li>
-              <li>
-                Built complex features including
-                <strong>IB Dashboard</strong> with hierarchical data
-                visualization, <strong>KYC integration</strong> using Sumsub
-                SDK, interactive event calendars, advanced filtering systems
-                with 8+ filter types, and real-time data updates.
-              </li>
+            <li>
+              Achieved
+              <strong>significant performance improvements</strong> through
+              WebP image optimization, code splitting, lazy loading, and
+              practical front-end improvements, raising Lighthouse scores from
+              65-75 to 90-98.
+            </li>
+            <li>
+              Developed
+              <strong>marketing and campaign pages</strong> with strong form
+              validation, interactive components, and smoother user flow.
+            </li>
+            <li>
+              Implemented
+              <strong>multi-language internationalization (13+ languages)</strong>
+              with full RTL support for Arabic to make products more usable
+              for different audiences.
+            </li>
+            <li>
+              Designed and maintained a large set of responsive
+              <strong>marketing email templates</strong> to support weekly
+              campaigns and keep communication consistent across teams.
+            </li>
 
-              <li>
-                Achieved
-                <strong>significant performance improvements</strong> through
-                WebP image optimization, code splitting, lazy loading, and
-                practical front-end improvements, raising Lighthouse scores from
-                65-75 to 90-98.
-              </li>
-              <li>
-                Developed
-                <strong>marketing and campaign pages</strong> with strong form
-                validation, interactive components, and smoother user flow.
-              </li>
-              <li>
-                Implemented
-                <strong
-                  >multi-language internationalization (13+ languages)</strong
-                >
-                with full RTL support for Arabic to make products more usable
-                for different audiences.
-              </li>
-              <li>
-                Designed and maintained a large set of responsive
-                <strong>marketing email templates</strong> to support weekly
-                campaigns and keep communication consistent across teams.
-              </li>
-
-              <!-- <li>
+            <!-- <li>
                 Ensured <strong>regulatory compliance</strong> across all
                 platforms (CMA, FSC, FSA, FINTRAC) with reliable handling of
                 errors and stable day-to-day performance.
               </li> -->
-            </ul>
-          </article>
+          </ul>
+        </article>
 
-          <article data-animate>
-            <h3>Freelance Front-End Developer</h3>
-            <i>Freelance</i>
-            <div>01/2024 – 04/2025</div>
-            <ul>
-              <li>
-                Collaborated closely with clients to design and develop
-                responsive landing pages using React, ensuring a smooth user
-                experience across devices (desktop, tablet, mobile).
-              </li>
-              <li>
-                Employed Material UI and Bootstrap to enhance the visual appeal
-                and responsiveness of landing pages, adhering to modern design
-                principles.
-              </li>
-            </ul>
-          </article>
+        <article data-animate>
+          <h3>Freelance Front-End Developer</h3>
+          <i>Freelance</i>
+          <div>01/2024 – 04/2025</div>
+          <ul>
+            <li>
+              Collaborated closely with clients to design and develop
+              responsive landing pages using React, ensuring a smooth user
+              experience across devices (desktop, tablet, mobile).
+            </li>
+            <li>
+              Employed Material UI and Bootstrap to enhance the visual appeal
+              and responsiveness of landing pages, adhering to modern design
+              principles.
+            </li>
+          </ul>
+        </article>
 
-          <article data-animate>
-            <h3>Front-End & Cross-Platform Mobile Development Trainee</h3>
-            <i>Information Technology Institute - Intensive Code Camp</i>
-            <div>05/2024 – 09/2024</div>
+        <article data-animate>
+          <h3>Front-End & Cross-Platform Mobile Development Trainee</h3>
+          <i>Information Technology Institute - Intensive Code Camp</i>
+          <div>05/2024 – 09/2024</div>
 
-            <ul>
-              <li>
-                I developed responsive and user-friendly web applications using
-                React and Next.js.
-              </li>
-              <li>
-                I collaborated with team members to implement best practices in
-                web development and mobile responsiveness, enhancing the overall
-                user experience.
-              </li>
-              <li>
-                Through hands-on projects, I gained valuable insights into
-                cross-platform development frameworks and tools, further
-                strengthening my understanding of web technologies.
-              </li>
-              <li>
-                This role allowed me to apply my technical skills in real-world
-                scenarios, fostering my growth as a developer.
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <h2>
-          <small>Featured</small>
-          Professional Projects
-        </h2>
-        <p class="projects-intro">
-          Selected projects delivered for DB Investing's digital platforms,
-          campaign websites, and customer-facing products
-        </p>
-        <div class="projects-container">
-          <article class="project" data-animate>
-            <a
-              href="https://dbinvesting.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/db-investing-main-website.webp"
-                alt="DB Investing Platform"
-                width="100%"
-                onerror="
+          <ul>
+            <li>
+              I developed responsive and user-friendly web applications using
+              React and Next.js.
+            </li>
+            <li>
+              I collaborated with team members to implement best practices in
+              web development and mobile responsiveness, enhancing the overall
+              user experience.
+            </li>
+            <li>
+              Through hands-on projects, I gained valuable insights into
+              cross-platform development frameworks and tools, further
+              strengthening my understanding of web technologies.
+            </li>
+            <li>
+              This role allowed me to apply my technical skills in real-world
+              scenarios, fostering my growth as a developer.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2>
+        <small>Featured</small>
+        Professional Projects
+      </h2>
+      <p class="projects-intro">
+        Selected projects delivered for DB Investing's digital platforms,
+        campaign websites, and customer-facing products
+      </p>
+      <div class="projects-container">
+        <article class="project" data-animate>
+          <a href="https://dbinvesting.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/db-investing-main-website.webp" alt="DB Investing Platform" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>DB Investing</h3>
-              <p>
-                Main corporate website for DB Investing focused on brand
-                presence, trust, and conversion. Built with
-                <span class="tech">Astro.js</span> and
-                <span class="tech">Tailwind CSS</span>, with SEO architecture
-                based on <span class="tech">Schema.org</span> structured data,
-                key conversion page redesigns, and performance improvements
-                across core sections. The platform also includes regulatory
-                information, FAQ and legal sections, and marketing analytics.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://dbinvesting.com/en/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="DB Investing Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>DB Investing</h3>
+            <p>
+              Main corporate website for DB Investing focused on brand
+              presence, trust, and conversion. Built with
+              <span class="tech">Astro.js</span> and
+              <span class="tech">Tailwind CSS</span>, with SEO architecture
+              based on <span class="tech">Schema.org</span> structured data,
+              key conversion page redesigns, and performance improvements
+              across core sections. The platform also includes regulatory
+              information, FAQ and legal sections, and marketing analytics.
+            </p>
+            <div class="demo-links">
+              <a href="https://dbinvesting.com/en/" target="_blank" rel="noopener noreferrer"><img src="./imgs/web.png"
+                  alt="DB Investing Live" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- <article class="project" data-animate>
+        <!-- <article class="project" data-animate>
             <a
               href="https://campaigns.dbinvesting.com/"
               target="_blank"
@@ -571,79 +429,57 @@
             </div>
           </article> -->
 
-          <article class="project" data-animate>
-            <a
-              href="https://secure.dbinvesting.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/db-investing-client-zone.webp"
-                alt="Client Zone"
-                width="100%"
-                onerror="
+        <article class="project" data-animate>
+          <a href="https://secure.dbinvesting.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/db-investing-client-zone.webp" alt="Client Zone" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>Client Zone (Customer Portal)</h3>
-              <p>
-                Customer portal and IB management product designed for complex
-                user workflows. Built advanced dashboard views with hierarchical
-                tree tables, commission tracking, and referral management.
-                Integrated <span class="tech">Sumsub SDK</span> for KYC,
-                implemented multilingual registration flows with
-                <span class="tech">Zod</span> validation, and supported full RTL
-                UX. The platform is powered by
-                <span class="tech">Next.js</span> and
-                <span class="tech">TypeScript</span> with API-driven data
-                architecture.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://secure.dbinvesting.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="Client Zone Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>Client Zone (Customer Portal)</h3>
+            <p>
+              Customer portal and IB management product designed for complex
+              user workflows. Built advanced dashboard views with hierarchical
+              tree tables, commission tracking, and referral management.
+              Integrated <span class="tech">Sumsub SDK</span> for KYC,
+              implemented multilingual registration flows with
+              <span class="tech">Zod</span> validation, and supported full RTL
+              UX. The platform is powered by
+              <span class="tech">Next.js</span> and
+              <span class="tech">TypeScript</span> with API-driven data
+              architecture.
+            </p>
+            <div class="demo-links">
+              <a href="https://secure.dbinvesting.com/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="Client Zone Live" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project" data-animate>
-            <a href="javascript:void(0)">
-              <img
-                src="./imgs/db-academy.webp"
-                alt="DB Academy"
-                width="100%"
-                onerror="
+        <article class="project" data-animate>
+          <a href="javascript:void(0)">
+            <img src="./imgs/db-academy.webp" alt="DB Academy" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #ff9966 0%, #ff5e62 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>DB Academy</h3>
-              <p>
-                Education-focused platform for webinars and market learning
-                content. Implemented interactive calendar experiences with
-                day/week/month view modes, role-aware event management flows,
-                and content-rich home/blog sections with responsive layouts.
-                Built with <span class="tech">Next.js</span>,
-                <span class="tech">Tailwind CSS</span>, and
-                <span class="tech">Zod</span> for form validation with strong
-                emphasis on usability, clear information structure, and
-                mobile-friendly interactions.
-              </p>
-              <!-- <div class="demo-links">
+          <div class="project-content">
+            <h3>DB Academy</h3>
+            <p>
+              Education-focused platform for webinars and market learning
+              content. Implemented interactive calendar experiences with
+              day/week/month view modes, role-aware event management flows,
+              and content-rich home/blog sections with responsive layouts.
+              Built with <span class="tech">Next.js</span>,
+              <span class="tech">Tailwind CSS</span>, and
+              <span class="tech">Zod</span> for form validation with strong
+              emphasis on usability, clear information structure, and
+              mobile-friendly interactions.
+            </p>
+            <!-- <div class="demo-links">
                 <a
                   href="https://stagingacademy66ptk72qbbz6.dbinvesting.com/"
                   target="_blank"
@@ -655,97 +491,63 @@
                     class="invertedImg"
                 /></a>
               </div> -->
-            </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project" data-animate>
-            <a
-              href="https://careers.dbinvesting.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/db-careers.webp"
-                alt="DB Careers"
-                width="100%"
-                onerror="
+        <article class="project" data-animate>
+          <a href="https://careers.dbinvesting.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/db-careers.webp" alt="DB Careers" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #fa709a 0%, #fee140 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>DB Careers</h3>
-              <p>
-                Global careers platform built with
-                <span class="tech">Astro.js</span> for strong performance and
-                search visibility. Implemented
-                <strong>13-language internationalization</strong> with RTL
-                support, advanced job discovery filters, and API-backed content
-                flows for listings. The experience includes interactive culture
-                sections and responsive video integration for a clearer hiring
-                experience.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://careers.dbinvesting.com/en/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="Careers Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>DB Careers</h3>
+            <p>
+              Global careers platform built with
+              <span class="tech">Astro.js</span> for strong performance and
+              search visibility. Implemented
+              <strong>13-language internationalization</strong> with RTL
+              support, advanced job discovery filters, and API-backed content
+              flows for listings. The experience includes interactive culture
+              sections and responsive video integration for a clearer hiring
+              experience.
+            </p>
+            <div class="demo-links">
+              <a href="https://careers.dbinvesting.com/en/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="Careers Live" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project" data-animate>
-            <a
-              href="https://dbiprime.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/dbi-prime.webp"
-                alt="DBI Prime"
-                width="100%"
-                onerror="
+        <article class="project" data-animate>
+          <a href="https://dbiprime.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/dbi-prime.webp" alt="DBI Prime" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>DBI Prime</h3>
-              <p>
-                Corporate website focused on clear B2B communication. Built key
-                pages and content experiences using
-                <span class="tech">Astro.js</span> and
-                <span class="tech">Tailwind CSS</span>, with emphasis on
-                performance, visual consistency, and multilingual usability. The
-                project includes improved page architecture, compliance-led
-                trust elements, and polished responsive sections.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://dbiprime.com/en/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="DBI Prime Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>DBI Prime</h3>
+            <p>
+              Corporate website focused on clear B2B communication. Built key
+              pages and content experiences using
+              <span class="tech">Astro.js</span> and
+              <span class="tech">Tailwind CSS</span>, with emphasis on
+              performance, visual consistency, and multilingual usability. The
+              project includes improved page architecture, compliance-led
+              trust elements, and polished responsive sections.
+            </p>
+            <div class="demo-links">
+              <a href="https://dbiprime.com/en/" target="_blank" rel="noopener noreferrer"><img src="./imgs/web.png"
+                  alt="DBI Prime Live" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- <article class="project" data-animate>
+        <!-- <article class="project" data-animate>
             <a
               href="https://support.dbinvesting.com/"
               target="_blank"
@@ -785,159 +587,130 @@
               </div>
             </div>
           </article> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="projects">
-        <h2>
-          <small>Featured</small>
-          Personal Projects
-        </h2>
-        <p class="projects-intro">
-          Personal projects exploring modern web technologies and full-stack
-          development
-        </p>
-        <div class="projects-container">
-          <article class="project" data-animate>
-            <a
-              href="https://audiotherapy.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/audiotherapy.webp"
-                alt="Audiotherapy"
-                width="100%"
-                onerror="
+    <section class="projects">
+      <h2>
+        <small>Featured</small>
+        Personal Projects
+      </h2>
+      <p class="projects-intro">
+        Personal projects exploring modern web technologies and full-stack
+        development
+      </p>
+      <div class="projects-container">
+
+
+        <article class="project" data-animate>
+          <a href="https://audiotherapy.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/audiotherapy.webp" alt="Audiotherapy" width="100%" onerror="
                   this.style.background =
                     'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
                   this.style.minHeight = '300px';
-                "
-            /></a>
+                " /></a>
 
-            <div class="project-content">
-              <h3>Audiotherapy</h3>
-              <p>
-                Personal full-stack product built with
-                <span class="tech">Next.js 16</span> that explores song meaning
-                through synced lyrics, annotations, and AI-assisted context. It
-                combines LRCLIB and Genius data with summaries powered by
-                <span class="tech">Google Gemini</span>, and includes a
-                persistent player, real-time lyric sync, YouTube IFrame
-                integration, favorites, and cache-first search flows. Built on
-                <span class="tech">TypeScript</span>,
-                <span class="tech">Supabase</span>,
-                <span class="tech">Zustand</span>, and
-                <span class="tech">Shadcn/UI</span>.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://audiotherapy.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="Audiotherapy Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>Audiotherapy</h3>
+            <p>
+              Personal full-stack product built with
+              <span class="tech">Next.js 16</span> that explores song meaning
+              through synced lyrics, annotations, and AI-assisted context. It
+              combines LRCLIB and Genius data with summaries powered by
+              <span class="tech">Google Gemini</span>, and includes a
+              persistent player, real-time lyric sync, YouTube IFrame
+              integration, favorites, and cache-first search flows. Built on
+              <span class="tech">TypeScript</span>,
+              <span class="tech">Supabase</span>,
+              <span class="tech">Zustand</span>, and
+              <span class="tech">Shadcn/UI</span>.
+            </p>
+            <div class="demo-links">
+              <a href="https://audiotherapy.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="Audiotherapy Live" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project" data-animate>
-            <a
-              href="https://reserve-mate.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./imgs/reserve-mate.webp"
-                alt="Reserve Mate"
-                width="100%"
-            /></a>
+        <article class="project" data-animate>
+          <a href="https://reserve-mate.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/reserve-mate.webp" alt="Reserve Mate" width="100%" /></a>
 
-            <div class="project-content">
-              <h3>Reserve Mate</h3>
-              <p>
-                Hotel booking web application developed during my ITI
-                scholarship. Built with <span class="tech">Next.js</span>,
-                <span class="tech">Bootstrap</span>, and
-                <span class="tech">Firebase</span>, featuring authentication,
-                searchable listings, booking workflows, profile management, and
-                admin controls. The project reflects my early product-building
-                foundation in full-stack flow design and responsive UX.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://reserve-mate.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="Reserve Mate Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-                <a
-                  href="https://github.com/PeterSadek/Reserve-Mate"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/github.png"
-                    alt="Reserve Mate's Repo"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>Reserve Mate</h3>
+            <p>
+              Hotel booking web application developed during my ITI
+              scholarship. Built with <span class="tech">Next.js</span>,
+              <span class="tech">Bootstrap</span>, and
+              <span class="tech">Firebase</span>, featuring authentication,
+              searchable listings, booking workflows, profile management, and
+              admin controls. The project reflects my early product-building
+              foundation in full-stack flow design and responsive UX.
+            </p>
+            <div class="demo-links">
+              <a href="https://reserve-mate.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="Reserve Mate Live" width="30" class="invertedImg" /></a>
+              <a href="https://github.com/PeterSadek/Reserve-Mate" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/github.png" alt="Reserve Mate's Repo" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project" data-animate>
-            <a
-              href="https://game-hub-two-kappa.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="./imgs/game-hub.webp" alt="Game Hub" width="100%"
-            /></a>
+        <article class="project" data-animate>
+          <a href="https://game-hub-two-kappa.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+              src="./imgs/game-hub.webp" alt="Game Hub" width="100%" /></a>
 
-            <div class="project-content">
-              <h3>Game Hub</h3>
-              <p>
-                Game discovery application built with
-                <span class="tech">React</span>,
-                <span class="tech">TypeScript</span>, and
-                <span class="tech">Chakra UI</span>. Includes advanced
-                filtering, search and sorting, theme support, and responsive
-                layouts. This project focused on maintainable architecture,
-                reusable hooks, and TypeScript-first implementation.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://game-hub-two-kappa.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="Game Hub Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-                <a
-                  href="https://github.com/PeterSadek/game-hub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/github.png"
-                    alt="Game Hub's Repo"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>Game Hub</h3>
+            <p>
+              Game discovery application built with
+              <span class="tech">React</span>,
+              <span class="tech">TypeScript</span>, and
+              <span class="tech">Chakra UI</span>. Includes advanced
+              filtering, search and sorting, theme support, and responsive
+              layouts. This project focused on maintainable architecture,
+              reusable hooks, and TypeScript-first implementation.
+            </p>
+            <div class="demo-links">
+              <a href="https://game-hub-two-kappa.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="Game Hub Live" width="30" class="invertedImg" /></a>
+              <a href="https://github.com/PeterSadek/game-hub" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/github.png" alt="Game Hub's Repo" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- <article class="project" data-animate>
+        <article class="project" data-animate>
+          <a href="https://rich-soon.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./imgs/richsoon.webp" alt="RichSoon" width="100%" onerror="
+                  this.style.background =
+                    'linear-gradient(135deg, #fbbf24 0%, #d97706 100%)';
+                  this.style.minHeight = '300px';
+                " /></a>
+
+          <div class="project-content">
+            <h3>RichSoon</h3>
+            <p>
+              A real-time financial tracking dashboard for Egyptian and global market rates. Track live gold prices
+              (24k, 21k, 18k) per gram, compute exact crafting fees using an interactive retail calculator, and monitor
+              USD to EGP bank rates with custom trend charts. Built with
+              <span class="tech">Next.js</span>,
+              <span class="tech">TypeScript</span>,
+              <span class="tech">Tailwind CSS v4</span>,
+              <span class="tech">TanStack Query</span>,
+              <span class="tech">Recharts</span>, and
+              <span class="tech">Upstash Redis</span>.
+            </p>
+            <div class="demo-links">
+              <a href="https://rich-soon.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="RichSoon Live" width="30" class="invertedImg" /></a>
+              <!-- <a href="https://github.com/PeterSadek/richsoon" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/github.png" alt="RichSoon's Repo" width="30" class="invertedImg" /></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- <article class="project" data-animate>
             <a
               href="https://adopt-me-ten-beige.vercel.app/"
               target="_blank"
@@ -980,7 +753,7 @@
             </div>
           </article> -->
 
-          <!-- <article class="project" data-animate>
+        <!-- <article class="project" data-animate>
             <a
               href="https://eatwell-ten.vercel.app/"
               target="_blank"
@@ -1022,50 +795,30 @@
             </div>
           </article> -->
 
-          <article class="project" data-animate>
-            <a
-              href="https://meals-app-sage-one.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="./imgs/react-meals.webp" alt="ReactMeals" width="100%"
-            /></a>
+        <article class="project" data-animate>
+          <a href="https://meals-app-sage-one.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+              src="./imgs/react-meals.webp" alt="ReactMeals" width="100%" /></a>
 
-            <div class="project-content">
-              <h3>ReactMeals</h3>
-              <p>
-                Meal-ordering application built with
-                <span class="tech">React</span>,
-                <span class="tech">Firebase</span>, and
-                <span class="tech">CSS3</span>. Supports browsing, item-level
-                quantity control, cart management, and order confirmation flows
-                with real-time UI updates.
-              </p>
-              <div class="demo-links">
-                <a
-                  href="https://meals-app-sage-one.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/web.png"
-                    alt="ReactMeals Live"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-                <a
-                  href="https://github.com/PeterSadek/meals-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./imgs/github.png"
-                    alt="ReactMeals's Repo"
-                    width="30"
-                    class="invertedImg"
-                /></a>
-              </div>
+          <div class="project-content">
+            <h3>ReactMeals</h3>
+            <p>
+              Meal-ordering application built with
+              <span class="tech">React</span>,
+              <span class="tech">Firebase</span>, and
+              <span class="tech">CSS3</span>. Supports browsing, item-level
+              quantity control, cart management, and order confirmation flows
+              with real-time UI updates.
+            </p>
+            <div class="demo-links">
+              <a href="https://meals-app-sage-one.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/web.png" alt="ReactMeals Live" width="30" class="invertedImg" /></a>
+              <a href="https://github.com/PeterSadek/meals-app" target="_blank" rel="noopener noreferrer"><img
+                  src="./imgs/github.png" alt="ReactMeals's Repo" width="30" class="invertedImg" /></a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- <article class="project" data-animate>
+        <!-- <article class="project" data-animate>
             <a
               href="https://mokatafah.vercel.app/"
               target="_blank"
@@ -1106,131 +859,78 @@
               </div>
             </div>
           </article> -->
+      </div>
+    </section>
+
+    <!-- Floating Chatbot Widget -->
+    <div id="floating-chatbot-container">
+      <!-- Chatbot Toggle Button -->
+      <button id="chatbot-toggle-button" title="Open chatbot" aria-label="Open chatbot">
+        <!-- SVG Chat Icon -->
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+          </path>
+        </svg>
+      </button>
+
+      <!-- Chat Box Widget  -->
+      <div id="chat-box-widget">
+        <!-- Chat header -->
+        <div class="chat-header">
+          <h3>AI Chatbot</h3>
+          <button id="close-button" class="chat-close-button" title="Close chatbot" aria-label="Close chatbot">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
         </div>
-      </section>
 
-      <!-- Floating Chatbot Widget -->
-      <div id="floating-chatbot-container">
-        <!-- Chatbot Toggle Button -->
-        <button
-          id="chatbot-toggle-button"
-          title="Open chatbot"
-          aria-label="Open chatbot"
-        >
-          <!-- SVG Chat Icon -->
-          <svg
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-            ></path>
-          </svg>
-        </button>
+        <!-- Chat log area -->
+        <div id="chat-log-area">
+          <ul id="chat-log">
+            <!-- Initial bot message -->
+            <li class="chat-message-item bot message-fade-in">
+              <span class="avatar bot">AI</span>
+              <div class="message bot">
+                Hi, I'm a friendly chatbot that lets you interact with Peter's
+                portfolio. How can I help?
+              </div>
+            </li>
+          </ul>
+        </div>
 
-        <!-- Chat Box Widget  -->
-        <div id="chat-box-widget">
-          <!-- Chat header -->
-          <div class="chat-header">
-            <h3>AI Chatbot</h3>
-            <button
-              id="close-button"
-              class="chat-close-button"
-              title="Close chatbot"
-              aria-label="Close chatbot"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Chat log area -->
-          <div id="chat-log-area">
-            <ul id="chat-log">
-              <!-- Initial bot message -->
-              <li class="chat-message-item bot message-fade-in">
-                <span class="avatar bot">AI</span>
-                <div class="message bot">
-                  Hi, I'm a friendly chatbot that lets you interact with Peter's
-                  portfolio. How can I help?
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Chat input and send button -->
-          <div class="chat-input-area">
-            <input
-              id="user-input"
-              type="text"
-              placeholder="Ask me a question..."
-            />
-            <button id="send-button">Send</button>
-          </div>
+        <!-- Chat input and send button -->
+        <div class="chat-input-area">
+          <input id="user-input" type="text" placeholder="Ask me a question..." />
+          <button id="send-button">Send</button>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="site-footer">
-      <div class="footer-container">
-        <a class="logo-holder" href="#">
-          <div class="logo">P</div>
-          <div class="logo-text">Peter Sadek</div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <a class="logo-holder" href="#">
+        <div class="logo">P</div>
+        <div class="logo-text">Peter Sadek</div>
+      </a>
+      <p class="footer-tagline">
+        Building intuitive, pixel-perfect experiences.
+      </p>
+      <div>
+        <a href="https://github.com/PeterSadek" target="_blank" rel="noopener noreferrer">
+          <img src="./imgs/github.png" alt="GitHub Logo" width="48" class="invertedImg" />
         </a>
-        <p class="footer-tagline">
-          Building intuitive, pixel-perfect experiences.
-        </p>
-        <div>
-          <a
-            href="https://github.com/PeterSadek"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./imgs/github.png"
-              alt="GitHub Logo"
-              width="48"
-              class="invertedImg"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/peter-sadek-9317611b3/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./imgs/linkedin.png"
-              alt="LinkedIn Logo"
-              width="52"
-              class="invertedImg"
-            />
-          </a>
-          <a href="mailto:Peter_Sadek@outlook.com">
-            <img
-              src="./imgs/email.png"
-              alt="Email Logo"
-              width="48"
-              class="invertedImg"
-            />
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/peter-sadek-9317611b3/" target="_blank" rel="noopener noreferrer">
+          <img src="./imgs/linkedin.png" alt="LinkedIn Logo" width="52" class="invertedImg" />
+        </a>
+        <a href="mailto:Peter_Sadek@outlook.com">
+          <img src="./imgs/email.png" alt="Email Logo" width="48" class="invertedImg" />
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
