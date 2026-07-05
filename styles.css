@@ -413,6 +413,9 @@ h1 {
             display: flex;
             gap: 10px;
 
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }
